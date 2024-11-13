@@ -1,3 +1,3 @@
 public interface Readable {
-    public void read();
+    public void viewUser();
 }

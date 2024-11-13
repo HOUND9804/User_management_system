@@ -7,7 +7,7 @@ public class RegularUser extends User implements Readable {
     }
 
     @Override
-    public void read() {
+    public void viewUser() {
         try {
             BufferedReader br = new BufferedReader(new FileReader("user.txt"));
             String line = br.readLine();

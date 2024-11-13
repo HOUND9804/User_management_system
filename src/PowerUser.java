@@ -9,7 +9,7 @@ public class PowerUser extends User implements Readable,Writeable{
     }
 
     @Override
-    public void read() {
+    public void viewUser() {
         try {
             BufferedReader br = new BufferedReader(new FileReader("user.txt"));
             String line = br.readLine();
@@ -24,9 +24,9 @@ public class PowerUser extends User implements Readable,Writeable{
     }
 
     @Override
-    public void write(String userId,String userName,String email,String password,String type) {
+    public void addUser(String userId,String username,String email,String password,String type) {
         try(BufferedWriter bw = new BufferedWriter(new FileWriter("user.txt",true))) {
-            bw.append(userId).append(",").append(userName).append(",").append(email).append(",").append(password).append(",").append(type);
+            bw.append(userId).append(",").append(username).append(",").append(email).append(",").append(password).append(",").append(type);
             bw.newLine();
         }catch (Exception e) {
             e.printStackTrace();
