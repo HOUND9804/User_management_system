@@ -1,6 +1,8 @@
+package Users;
+
 public class User {
     protected String userid;
-    protected String username;
+    public String username;
     protected String password;
     protected String email;
     protected String usertype;
@@ -12,4 +14,5 @@ public class User {
         this.email = email;
         this.usertype = usertype;
     }
+
 }

@@ -1,3 +1,5 @@
+package interfaces;
+
 public interface AdminPrivilege {
     public void updateUserPrivilege(String userId, String privilege);
     public void updateUserInfo(String userId, String oldInfo,String newInfo);
